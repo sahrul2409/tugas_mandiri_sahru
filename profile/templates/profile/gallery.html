@@ -1,0 +1,31 @@
+{% extends 'profile/base.html' %}
+{% load static %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">Dokumentasi kegiatan saya</p>
+    </div>
+</section>
+<section class="gallery-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            {% for i in "123456" %}
+            <div class="col-md-4">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/400/300?random={{ i }}0" alt="Gallery {{ i }}" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <h4>Kegiatan {{ i }}</h4>
+                                <p>Dokumentasi kegiatan {{ i }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

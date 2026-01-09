@@ -1,0 +1,47 @@
+{% extends 'profile/base.html' %}
+{% load static %}
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title">Tentang Saya</h1>
+        <p class="page-subtitle">Perjalanan pendidikan dan organisasi saya</p>
+    </div>
+</section>
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-5 mb-4">
+                <img src="https://picsum.photos/500/600?random=2" alt="About" class="img-fluid rounded-custom">
+            </div>
+            <div class="col-lg-7">
+                <h2 class="mb-4">Hi, Saya Sahru Ramadoan!</h2>
+                <p>Mahasiswa dengan passion di bidang teknologi. Perjalanan saya di dunia digital dimulai sejak kuliah.</p>
+            </div>
+        </div>
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Riwayat Pendidikan</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2022 - Sekarang</span>
+                    <h4>STT NF</h4>
+                    <p class="institution">S1 Teknik Informatika</p>
+                    <p>Fokus pengembangan web . IPK: 3.85/4.00</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2019 - 2022</span>
+                    <h4>SMA Negeri 1 SAPE</h4>
+                    <p class="institution">Jurusan IPA</p>
+                    <p>Aktif di ekstrakurikuler Olimpiade Komputer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
